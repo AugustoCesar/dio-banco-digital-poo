@@ -1,21 +1,17 @@
 package org.example;
 
+import lombok.*;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Cliente {
 
-	private String nome;
-
-	public Cliente(){}
-
-	public Cliente(String nome){
-		this.nome = nome;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    private String nome;
+    private String cpf;
+    private Date dataNascimento;
 
 }
